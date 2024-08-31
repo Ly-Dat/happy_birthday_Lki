@@ -189,39 +189,34 @@
     animation: fadeIn 2s ease-in-out;
 }
 .message .left-text,
-.message .right-text,
-.message .center-text,
 .message .date-text{
-    font-size: 1em;
+    font-size: 0.7em;
     color: #797979;
     position: absolute;
     top: 0;
+    position: relative;
 }
 
 .message .left-text {
-    left: 90px;
-    top: 60%;
+    left: 1%;
+    top: -20%;
     animation: bounce 10s infinite;
     
 }
 .message .center-text {
-    left: 500px;
-    top: 70%;
+    left: 5%;
+    top: -10%;
     color: #ff6666;
-    font-size: 1.5em;
+    font-size: 1em;
     animation: colorBlink 1s infinite;
-    position: absolute;
+    position: relative;
 }
 .message .date-text {
-    left: 640px;
-    top: 80%;
+    left: 30%;
+    top: -10%;
+    position: relative;
 }
-.message .right-text {
-    right: 90px; 
-    top: 60%;
-    animation: bounce 10s infinite;
-    
-}
+
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
@@ -340,6 +335,20 @@
     background-color: rgb(242, 255, 0);
 }
 
+.firework:nth-child(10) {
+    left: 70%;
+    top: 75%;
+    animation-delay: 1s;
+    background-color: rgb(111, 186, 236);
+}
+
+.firework:nth-child(11) {
+    left: 30%;
+    top: 75%;
+    animation-delay: 0.8s;
+    background-color: rgb(214, 135, 226);
+}
+
 @keyframes explode {
     0% {
         transform: scale(0);
@@ -404,6 +413,8 @@
         <div class="firework"></div>
         <div class="firework"></div>
         <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
     </div>
     <div class="cake">
         <div class="plate"></div>
@@ -424,11 +435,13 @@
         <div class="flame2"></div>
     </div>
     <h1 class="message">
-        <span class="left-text">祝你身体健康,<br>永远快乐</span>
+        <p class="left-text">
+            祝你身体健康,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;祝你学习进步,<br>&nbsp;&nbsp;&nbsp;永远快乐&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;财源广进
+        </p>
+         
         <a href="https://drive.google.com/file/d/1h0tZHoCxrHARfSWj4lIZ4cpPqhnVfTmA/view?usp=sharing" class="center-text">玲琦, 祝你生日快乐L</a>
         <!-- <span class="center-text">玲琦, 祝你生日快乐</span> -->
-      <span class="date-text">(15-09-2024)</span>
-        <span class="right-text">祝你学习进步,<br>财源广进</span>
+      <p class="date-text">(15-09-2024)</p>
     </h1>
 </body>
 </html>
